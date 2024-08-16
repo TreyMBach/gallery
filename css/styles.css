@@ -11,14 +11,18 @@ body {
     margin-left: 50px;
     margin-right: 50px;
     max-width: 100%; /* 5% margin on either side */
-    height: 300px; /* Set a height for the placeholder */
+    height: 700px; /* Set a height for the placeholder */
     background-color: #cccccc; /* Grey background */
     display: flex;
     justify-content: center;
     align-items: center;
     color: #666;
-    font-size: 24px;
-    border-radius: 10px;
+    font-size: 24px;}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .past-services {
@@ -27,8 +31,25 @@ body {
     text-align: center;
 }
 
-.past-services h2 {
-    margin-bottom: 20px;
+.past-services a {
+    margin-top: 40px;
+    text-decoration: none;
+    color: #333;
+}
+
+#viewBtn {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#viewBtn button {
+    padding: 10px 20px;
 }
 
 .service-images {
@@ -44,4 +65,14 @@ body {
     height: 25rem;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.service-images img:hover {
+    cursor: pointer;
+}
+
+.about-us {
+    margin: 20px auto;
+    max-width: 90%;
+    text-align: center;
 }
